@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./header.ejs') %> 
+    </head>
+<body>
+<div>
+    <%- include('./nav.ejs') %> 
+</div>      
+    
+<div class="About content">
+    <h2> About Us </h2>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+</div>
+
+<div class="About content">
+    <% info.forEach((info)=> { %>
+</div>
+
+<ul>
+    <li>
+        <h2>
+            <%= info.Name %>
+        </h2>
+    </li>
+</ul>
+
+    <% }) %>
+
+<div>
+    <%- include('./footer.ejs') %>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./header.ejs') %> 
+</head>
+<body>
+<div>
+    <%- include('./nav.ejs') %>
+</div>
+
+     <a href="/create/blogs"><h2>New Blog</h2></a>
+
+<div class="form information">
+    <% if (Blogs.length >= 0){ %>
+        <% for (let i=0; i< Blogs.length; i++) {%>
+        <div>
+            <a href=/blogs/<%= Blogs[i].getId() %>> <h2><%= Blogs[i].getTitle() %></h2> </a> 
+            <p> <%= Blogs[i].getBody() %></p> 
+            <!-- delete form data using delete method -->
+            <a href=/blogs/<%= Blogs[i].getId() %>/remove ><h4>Delete Blog</h4></a>
+        </div>
+        <% } %>
+    <% } %> 
+</div>
+
+<div>
+    <p> Put Your blog here....</p>
+</div>
+
+<div>
+    <%- include('./footer.ejs') %> 
+</div>
+     
+</body>
+</html>

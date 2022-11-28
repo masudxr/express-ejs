@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./header.ejs') %> 
+    </head>
+<body>
+<div>
+    <%- include('./nav.ejs') %>
+</div>
+    
+<div class="Create-blogs content">
+    <h2> Create new Blog Post </h2>
+    <form action="/home" method="post">
+        <div class="form">
+            <label for="title">Title</label>
+            <input type="text" id="title" placeholder="Title && Id" name="title" required>
+        </div>           
+        <div class="form2">
+            <label for="body">Body</label>
+            <textarea id="body" placeholder="Type Your Blog Here!! " required name="body"></textarea>
+        </div>
+        <button> Create Blog </button>
+    </form>
+</div>
+
+<div>
+    <%- include('./footer.ejs') %>
+</div>  
+
+</body>
+</html>

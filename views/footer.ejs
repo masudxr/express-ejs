@@ -1,0 +1,562 @@
+<footer>
+    Copyright @copy: 
+    <h2>
+        Masud Rana
+    </h2> 
+</footer>
+
+<!-- 
+/////////////////////----------------------//////////////////
+console.log("بسم الله الرحمن الرحيم");
+console.log('   ',"Alhamdulillah");
+// class Car {
+//     name;
+//     age;
+//     constructor(name, age){
+//        this.name = name;
+//        this.age = age;
+//     }
+// }  
+// const Car1 = new Car("Toyota", 2015);
+// const Car2 = new Car("BMW", 2010);
+// console.log('My New Car name is:', Car1.name, 'AND its build in:', Car1.age);
+// console.log('My New Car name is:', Car2.name, 'AND its build in:', Car2.age);
+   //------------------------------------------//
+// function ADD(a,b){
+//     return a*b;
+// }
+// console.log(ADD(3,4));
+
+// console.log(3*7);
+// console.log('hello world');
+//------------------------------------------------//
+/*
+****
+***
+**
+*
+*/
+//--------------------------//
+/* pattern with javascript//
+let i=6
+for ( ; i>0; i--){
+    let j=i-1
+    // for(; j>0; j--){
+        if (j ==5){
+            console.log('A','B','C','D', 'E')
+        }
+        if (j ==4){
+            console.log('A','B','C','D')
+        }
+        if (j ==3){
+            console.log('A','B','C')
+        }
+        if (j ==2){
+            console.log('A','B')
+        }
+        if (j ==1){
+            console.log('A')
+        }
+        
+        // process.stdout.write(' ');
+    // }
+    
+    // process.stdout.write('\n'); // break statement
+} */
+/*-------------------------//
+class WithConstructor {
+    name;
+    age;
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+}
+const x = new WithConstructor('masud', 29)
+console.log(x.name, x.age);
+
+//-------------------------------//
+
+class Withoutconstructor {
+    name;
+    age;
+    setName(name){
+        this.name = name;
+    }
+    getName(){
+        return this.name;
+    }
+    setAge(age){
+        this.age = age;
+    }
+    getAge(){
+        return this.age;
+    }
+
+}
+const y = new Withoutconstructor();
+y.setName('Shihab');
+y.setAge (21);
+console.log(y.getName(), y.getAge()); */
+
+/*  ---------------pattern Alphabet----------------------------///
+
+let Arr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'i', 'j', 'k'];
+// console.log(Arr);
+let i=7
+for ( ; i>1; i--){
+    let j=0
+    for(; j<i; j++){
+        process.stdout.write(Arr[j] +' ');
+    }
+    process.stdout.write('\n');
+}
+*/
+//------------Exercise-----13/10/2022--------------//
+/*
+const A = [5, 6, 7];
+
+for (let i=0; i<A.length; i++){
+    if (A[i] == 5){
+        console.log(true);
+    }
+    if (A[i] == 8){
+        console.log(false);
+    }
+}
+*/
+/*
+const A = [1,3,5,9];
+let B=[];
+for (let i=A.length-1; i>=0; i--){
+    // console.log(A[i]);
+    B.push(A[i]);
+
+}
+console.log(B);
+*/
+/*
+// var fs = require('fs');
+ 
+// fs.writeFile('newfile.txt', 'Learn Node FS module', function (err) {
+//   if (err) throw err;
+//   console.log('File is created successfully.');
+// });
+
+// fs.open('newfile.txt', 'W', function (err, file) {
+//     if (err) throw err;
+//     console.log('File is opened successfully.');
+//   });
+
+
+
+/*
+// sorting //
+const arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ];
+let masud = 0;
+
+for (let i =0; i<arr1.length; i++){
+    for (let j=i+1; j < arr1.length; j++){
+        if (arr1[i] >= arr1[j]){
+            masud = arr1[j];
+            arr1[j] = arr1[i];
+            arr1[i] = masud;
+        }
+    }
+}
+console.log(arr1);
+*/
+/*
+
+///------------------------------
+ /*
+const a = [4,3,6,3,4,3]
+
+// function count_duplicate(a){
+   
+ let counts = {}
+
+for(let i =0; i < a.length; i++){ 
+     if (counts[a[i]])
+     {
+     counts[a[i]] += 1
+     } 
+     else 
+     {
+     counts[a[i]] = 1
+     }
+}
+    console.log(counts);  
+    for (let x=0; x<a.length; x++){
+        if (counts[x] >= 2){
+            console.log(x + " counted: " + counts[x] + " times.")
+        }
+    } */
+//   console.log(counts)
+// }
+
+// count_duplicate(a)
+
+/* ------------------------------
+
+function find_duplicate_in_array(arra1) {
+    var object = {};
+    var result = [];
+
+    arra1.forEach(function (item) {
+      if(!object[item])
+          object[item] = 0;
+        object[item] += 1;
+    })
+
+    for (var prop in object) {
+       if(object[prop] >= 2) {
+           result.push(prop);
+       }
+    }
+
+    return result;
+
+}
+
+console.log(find_duplicate_in_array([1, 2, -2, 4, 5, 4, 7, 8, 7, 7, 71, 3, 6]));
+*/
+// Duplicate Number //
+// const A = [5,5,9,6,6];
+// let count = 0;
+// let B =[];
+// let i =0;
+// let j =i+1;
+// IsDuplicate = false;
+// while (i<A.length){
+//     while (j<A.length){
+//         if (A[i]==A[j]){
+//             A[j]=-j;
+//             IsDuplicate = true;
+//         } 
+//         j++;  
+//     }
+//     i++;
+// }
+
+// if (IsDuplicate == true){
+//     B.push(A[i]);
+//     count +=1;
+// }
+// console.log(count);
+// console.log(B);
+// console.log(A);
+//--------------------------------//
+/*
+const A = [5, 5, 7, 3, 1, 9, 5, 5, 3,3];
+let B=[];
+
+for (let i=0; i<A.length; i++){
+    for (let j=i+1; j<A.length; j++){
+        if (A[i]==A[j]){
+            if (B[B.length-1] != A[i]){ 
+                B.push(A[i]);
+            }
+            A[j]=-j;         
+        }
+                  
+    }
+}
+console.log(B);
+*/
+
+/*
+Nested loop exercise:
+- Find sum of series: 1 + x + x^2 + x^3 + ... x^n
+- Print Prime number in a given range
+- Find composite numbers between 2 to 1000.
+
+*/
+//--------Print Prime number in a given range--------------------------//
+/*
+let m = [];
+let n = 51;
+for (let i=3; i<=n; i++){
+    let count =0;
+    for (let j=2; j<=n-1; j++){
+
+        if (i%j==0){
+            count+=1;
+        }  
+    }
+    if (count < 2){
+        m.push(i);
+    }   
+}
+console.log(m); */
+//------------ Find composite numbers between 2 to 1000.--------------//
+/*
+let m = [];
+for (let i=2; i<=1000; i++){
+    let count =0;
+    for (let j=1; j<=10; j++){
+
+        if (i%j==0){
+            count+=1;
+        }  
+    }
+    if (count > 2){
+        m.push(i);
+    }   
+}
+console.log(m);
+*/
+//---------- Find sum of series: 1 + x + x^2 + x^3 + ... x^n-------------//
+
+// const n=3;
+// const x=2;
+// let sum = 0 ;
+// let mid =0;
+
+
+// for (let j=1; j<=n; j++){
+//     mid = x*2;
+// }
+
+
+// console.log(sum);
+//------------------------------------------//
+// console.log("Hello world!");
+// //13.Object  
+
+// let str = "The rain in SPAIN stays mainly in the plain";
+
+// console.log(str.endsWith("rain", 10));
+
+//--------------------//-----------//
+
+
+//Array forEach method
+/*
+const Arr =[45, 4, 9, 61, 52];
+
+function myFunction (value,index,array){
+    console.log (value);
+    console.log (index);
+    console.log (array);
+    console.log ("-------------------------");
+
+}
+Arr.forEach(myFunction);  */
+/*
+//Array map method
+const Arr =[45, 4, 9, 61, 52];
+
+function myFunction (value){
+    return value*2
+
+}
+const newArr = Arr.map(myFunction);
+console.log(newArr);
+*/
+/*
+//Array filter method
+const Arr =[45, 4, 9, 61, 52];
+
+function myFunction (value){
+    return value > 50;
+
+}
+const newArr = Arr.filter(myFunction);
+console.log(newArr);
+// */
+
+//---------------------Scope----------------------//
+// block scope
+// {
+//     // let x = 15;
+//     var xy = 15;
+// }
+// // console.log(x);
+// console.log(' var',xy)
+/*
+//-----------///////////Object///////-------//
+const Bird = {
+    name : 'Moyna',
+    weight: '.5 kg',
+    color: 'white',
+    Fly: function(){
+        console.log(this.name + " Can fly");
+    }
+}
+console.log('    ', Bird.weight);
+console.log(Bird.Fly())
+*/
+
+//-----------///////////Object///////-------//
+
+/*
+const Arr = ["MAsud Rana Arafath"];
+const Arr2 = ["a","e","i","o","u","A","E","I","O","U"];
+let Arr3 =[];
+
+for (let i=0; i<Arr2.length; i++){
+    for (let j=0; j<Arr.length; j++){
+        if (Arr2[i]==Arr[j]){
+            Arr3.push(Arr2[i]);
+        }
+    }
+}
+console.log(Arr3); */
+
+//-----//--Function--//-----//
+/*
+=> parenthesis
+=> Perameters (Variables)
+=> Argumantes (Values)
+
+function myFunction(name, a,b){
+    console.log(name,',',"I Love Bangladesh");
+    // console.log("I Also Love Bangladesh");
+    console.log('sum of 2 numbers: ', a+b);
+    return a/b;
+}
+
+let x = myFunction('Shihab', 550,10);
+console.log('Division 2 numbers: ', x);
+
+let y = myFunction('Masud', 999,9);
+console.log('Division 2 numbers: ', y);
+
+let xy= myFunction('kkk');
+// console.log('Division 2 numbers: ',xy);
+*/
+//-----//--call back Function--//-----//
+
+// function myDisplayer(something) {
+//     console.log(something);
+//   }
+  
+//   function myCalculator(num1, num2, myCallback) {
+//     let sum = num1 + num2;
+//     myCallback(sum);
+//   }
+  
+//   myCalculator(5, 5, myDisplayer);
+
+//----------------- call back function-----------///
+/*
+
+function fun (funny){
+    console.log(funny);
+}
+  
+function Math(a, b, myCallback){
+    let sum = a+b;
+    myCallback(sum);
+}
+Math (5, 7, fun);
+*/
+
+//----------------Arrow Function-----------//
+/* Common Function 
+function Man() {
+    return "Helloooooooooo World!";
+}
+
+let x = Man();
+console.log(x);
+
+//-------------------------
+
+const hello = () => {
+    return "Hello Woooorld!";
+}
+
+let xy = hello();
+console.log(xy);
+//------------------//
+const hello2 = () =>  "Hello Worldddddd!";
+
+let yy = hello2();
+console.log(yy);
+
+//------------------//
+// let mon =5;
+const sum = () => {
+    // const c = 5+mon;
+    return 7*9;
+}
+
+let xx = sum();
+console.log(xx);
+
+//------------//
+//------------this---call() method--AND bind() method----///
+const person1 = {
+    fullName: function(){
+        return this.firstName + " " + this.lastName;
+    }
+  }
+
+const member = {
+    firstName:"Shihab",
+    lastName: "Mridha",
+    }
+
+const person5 = {
+    firstName:"Masud",
+    lastName: "Rana",
+    }
+
+let FullNamE = person1.fullName.bind(person5);
+console.log(FullNamE());
+//   console.log(person1.fullName.bind(person5));
+//   console.log(person1.fullName.call(person2));
+let xxxx = person1.fullName.call(member);
+console.log(xxxx); */
+
+//------Class with inside the function------------//
+/*
+class Bird {
+    name;
+    fly;
+    constructor(A, B){
+        this.name = A;
+        this.fly = B;
+    }
+    Flying = () =>{
+        if (this.fly == true){
+            console.log(this.name + ' can flying')
+        }
+        else{
+            console.log(this.name + ' can not fly');
+        }
+    }    
+}
+let Bird1= new Bird ('Moyna', true);
+Bird1.Flying();
+
+let Bird2= new Bird ('Tiya', false);
+Bird2.Flying();
+
+*/
+//--------Proper callback function-------///
+/*
+function get (a, callback){
+    callback(a, 'Masud');
+}
+
+get("Masud", (req, res)=> {
+    console.log(req, res);
+});
+
+*/
+// let xy = get('Masud', result);
+// console.log(xy); 
+//-----------call back--------------//
+
+// function callback (){
+//     console.log("Masud");
+// }
+
+// function myDisplay(a, b, backfall){
+//     let sum = a+b;
+//     backfall(sum);
+// }
+// myDisplay(5, 9, callback); -->
